@@ -1,0 +1,73 @@
+.navigate ul{
+    width: 1024px;
+    height: 50px;
+    line-height: 50px;
+    background-color: blanchedalmond; /* 导航栏底色 */
+    margin: auto;
+}/* 对导航栏的整体样式进行设置 */
+.navigate ul li{
+    list-style: none;
+    float: left;
+}/* 删除列表的样式并设置浮动 */
+.navigate ul #li2{
+    list-style: none;
+    float: right;
+}
+.navigate ul li button{
+    border-style: none;
+    background: transparent;
+    color: black;
+    font-size: medium;
+}
+
+.navigate a{
+    color: black;
+    padding: 20px;
+    margin: 0;
+    text-decoration: none;
+}/* 设置a标签的样式 */
+
+.nav1 {
+    text-align: center;
+    position: relative;/* 设置相对定位 */
+    display: inline-block;/* 让元素具有块级元素和行内元素的特性,即将块级元素转化为内联元素 */
+}
+
+.nav2 {
+    min-width: 125px;
+    display: none;/* 将某元素隐藏起来 */
+    position: absolute;/* 绝对定位 */
+    background-color: blanchedalmond;  /* 下拉菜单的背景颜色 */
+    z-index: 1;
+}
+
+.nav2 a {
+    text-align: center;
+    color: black;
+    padding: 0;
+    display: block;/* 将a标签设置为块级标签 */
+}
+
+.nav2 a:hover {
+    background-color: floralwhite;
+}/* 鼠标悬浮在下拉菜单时的颜色 */
+
+.nav1:hover .nav2 {
+    display: block;
+}/* 鼠标悬浮在元素上时,变为块级标签 */
+
+.nav1:hover,li:hover{
+    background-color: aliceblue;
+}/*鼠标悬浮在导航栏上的颜色*/
+
+
+#n a{
+    color:black;
+    display: block;
+    padding:15px;
+    border: 2px dashed #ffffff;
+}
+#n :hover{
+    display: block;
+    background-color: aliceblue;
+}
